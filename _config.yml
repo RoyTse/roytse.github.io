@@ -1,0 +1,64 @@
+# Basic
+title: 碎雪的小屋
+subtitle: 个人博客
+description: 欢迎来到我的个人博客
+# 头像里面的标题
+avatarTitle: Roy
+# 头像里面的描述
+avatarDesc: 信息安全 / 软件工程
+url: "http://roytse.github.io"
+
+# Comment
+layout: post
+comments: true
+# other options
+comment:
+    disqus: Roy
+    duoshuo: Roy
+    # comments: true
+    # other options
+
+# Social
+social:
+    weibo: 2745126325
+    github: RoyTse
+    twitter: \@_Fare_well_
+    mail: 907064516@qq.com
+
+# 百度统计 
+# 使用博客模板请去掉或者更换 id 
+# baidu:
+#     id: 8ba1c6be0953b6f9c2ba38e57f615421  
+
+# Google Analytics
+# 使用博客模板请去掉或者更换 id
+# ga:
+#     id: UA-84134159-3   
+#     host: auto  
+
+permalink: /:year/:month/:title/
+# Format
+highlighter: rouge
+
+textColor: #FF0000
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: clear
+
+# The blog button should not be removed.
+blog_button:
+    title: 博客主页
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 关于我, description: about, url: '/about'}      
+    
+
+# Pagination
+gems: [jekyll-paginate]
+paginate: 20
+paginate_path: "page/:num/"
+
+
