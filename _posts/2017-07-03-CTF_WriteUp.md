@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "博赛杯"热身赛Write Up
+title: 博赛杯热身赛Write Up
 date: 2017-07-03 
-tags: CTF-WP  
+tags: CTF_WP  
 ---
 
 ## 介绍
