@@ -39,7 +39,7 @@ tags: CTF_WP
     f.write(test)
     f.close()
 
-以上都是错误的示范！！！因为有更方便的方式，NetCat自带有输出功能。`nc 9.9.9.10 1234 > 1.txt `这样所有的输出就在1.txt里了。这样很明显就能看出来是一个二维码。但是并不能直接识别。需要将福替换成比较复杂的汉字。然后字体加粗，缩小字号到看不清字。主要在于字不能太大也不能太小，截图后做个反向或者直接扫描就可以识别。最后得到FLAG。
+　　以上都是错误的示范！！！因为有更方便的方式，NetCat自带有输出功能。`nc 9.9.9.10 1234 > 1.txt `这样所有的输出就在1.txt里了。这样很明显就能看出来是一个二维码。但是并不能直接识别。需要将福替换成比较复杂的汉字。然后字体加粗，缩小字号到看不清字。主要在于字不能太大也不能太小，截图后做个反向或者直接扫描就可以识别。最后得到FLAG。
 
 ### Easy Login
 
@@ -52,8 +52,8 @@ tags: CTF_WP
 　　demo账号密码都是自己填好了的。我们直接登陆看看会有什么。登陆后页面只有一句话。Welcome,But u can't do anything!好吧，这很明显能想到是权限问题。然后网站权限靠什么控制呢？一般都是cookie，所以查看当前网站的cookie。发现有个
 
 	mycookie=ZGVtb0BkYmFwcHNlY3VyaXR5LmNvbS5jbg%3D%3D
-　　
-　　%3D在URL编码中是`=`，因为结尾的两个`=`所以我们可以看出来这个cookie很有可能是一个base64编码。所以拿去解码试试。结果解出来是`demo@dbappsecurity.com.cn`说明思路是正确的。我试了一下将demo改为admin\administrator等之类的常规管理名，然后base64加密后替换cookie。发现不管用。猜不到管理员的邮箱没办法登陆，一度卡在这里。不过幸运的是，后来F12审查元素的时候，发现其中有这么一段
+
+　　在URL编码中%3D是`=`，因为结尾的两个`=`所以我们可以看出来这个cookie很有可能是一个base64编码。所以拿去解码试试。结果解出来是`demo@dbappsecurity.com.cn`说明思路是正确的。我试了一下将demo改为admin\administrator等之类的常规管理名，然后base64加密后替换cookie。发现不管用。猜不到管理员的邮箱没办法登陆，一度卡在这里。不过幸运的是，后来F12审查元素的时候，发现其中有这么一段
 
 <div align="center">
 <img src="/images/posts/CTF-WP/2.png" height="300" width="500">
