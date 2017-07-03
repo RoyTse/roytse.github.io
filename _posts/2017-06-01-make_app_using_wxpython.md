@@ -421,4 +421,4 @@ tags: Python学习
 　　应用已经传在github上面。地址如下：[Roy'sTools](https://github.com/RoyTse/roytse.github.io)
 
 <br>
-转载请注明：[碎雪的小屋](http://RoyTse.github.io) » [使用 wxPython 创建自己的OSX应用](http://RoyTse.github.io/2016/11/neural_networks_using_TensorFlow/)  
+转载请注明：[碎雪的小屋](http://RoyTse.github.io) » [使用 wxPython 创建自己的OSX应用](http://RoyTse.github.io/2017/06/make_app_using_wxpython/)  
