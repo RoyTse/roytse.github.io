@@ -120,13 +120,13 @@ tags: CTF_WP
 　　后来随便扫了一下目录。发现有/include和/dbadmin目录。直接访问这两个目录。
 
 <div align="center">
-<img src="/images/posts/CTF-WP/4.png" height="300" width="500">
+<img src="/images/posts/CTF-WP/4.png">
 </div> 
 
 　　这里有个db.php,下下来一看里面有数据库账号密码。
 
 <div align="center">
-<img src="/images/posts/CTF-WP/5.png" height="300" width="500">
+<img src="/images/posts/CTF-WP/5.png">
 </div> 
 
 　　所以用这里的账号密码从dbadmin登陆phpadmin，然后查看数据库，有个flag表打开获得FLAG。
@@ -142,13 +142,13 @@ tags: CTF_WP
 　　幸运的是，访问robots.txt的时候。如图：
 
 <div align="center">
-<img src="/images/posts/CTF-WP/7.png" height="200" width="500">
+<img src="/images/posts/CTF-WP/7.png">
 </div> 
 
 　　访问之后如下图：
 
 <div align="center">
-<img src="/images/posts/CTF-WP/8.jpg" height="300" width="500">
+<img src="/images/posts/CTF-WP/8.jpg">
 </div> 
 
 　　这里的意思是如果`ctf`参数存在，就得到`ctf`的值，否则为空。将值赋值给变量`a`。如果`a`这个函数存在，则执行`a`这个函数。否则`print <<<DBAPP`。所以我们直接在链接后面加?ctf=xxx，尝试flag等无果。后来尝试phpinfo发现打开了。而flag就在里面。得到FLAG。
@@ -162,7 +162,7 @@ tags: CTF_WP
 　　查看附件
 
 <div align="center">
-<img src="/images/posts/CTF-WP/9.png" height="300" width="500">
+<img src="/images/posts/CTF-WP/9.png">
 </div> 
 
 　　mysql账号密码泄露，直接mysql3306登陆查看数据库就能得到FLAG。
