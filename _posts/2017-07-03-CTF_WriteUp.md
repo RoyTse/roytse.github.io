@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "博赛杯"热身赛Write Up
-date: 2017-06-29 
+date: 2017-07-03 
 tags: CTF-WP  
 ---
 
@@ -100,8 +100,8 @@ tags: CTF-WP
 　　题目描述是 You are not a administrator
 	
 　　不管那么多，打开页面发现有个登录和注册，那就先注册。然后登陆后提示You are not a administrator。很明显还是一个权限控制Web题，所以查看一下cookie。发现有个username和uid。
-<div align="center">
-	<img src="/images/posts/CTF-WP/3.png" height="300" width="500">
+	<div align="center">
+	<img src="/images/posts/CTF-WP/3.png">
     </div> 
 　　又有%3D，仿佛我又看见了base64加密替换的套路。然而并不会出同一样的题，所以解码出来是乱码，后来一直看不出来是什么加密方法，然后卡在这里了。后来看ＷriteUp的时候才发现，套路有够骚的。WP里面把cookie的username替换成了uid,发现用户名变成了uid，可以推测根据uid判断用户。由于不知道加密方式无法直接修改cookie，但是可以用username替换uid。所以思路出来了。注册用户名是管理员uid的用户，然后替换就可以了。但是发现注册名有长度限制，太短无法注册。经测试，注册用户为1aaaaa的用户，登陆替换后发现uid成了1，aaaaa被过滤。所以我们可以一直注册下去直到注册到admin获得权限拿到FLAG。
 
@@ -130,12 +130,12 @@ tags: CTF-WP
 
 　　幸运的是，访问robots.txt的时候。如图：
 	<div align="center">
-	<img src="/images/posts/CTF-WP/7.png" height="300" width="500">
+	<img src="/images/posts/CTF-WP/7.png" height="200" width="500">
     </div> 
 
 　　访问之后如下图：
 	<div align="center">
-	<img src="/images/posts/CTF-WP/8.png" height="300" width="500">
+	<img src="/images/posts/CTF-WP/8.jpg" height="300" width="500">
     </div> 
 
 　　这里的意思是如果`ctf`参数存在，就得到`ctf`的值，否则为空。将值赋值给变量`a`。如果`a`这个函数存在，则执行`a`这个函数。否则`print <<<DBAPP`。所以我们直接在链接后面加?ctf=xxx，尝试flag等无果。后来尝试phpinfo发现打开了。而flag就在里面。得到FLAG。
