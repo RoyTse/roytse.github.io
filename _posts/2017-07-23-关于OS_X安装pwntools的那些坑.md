@@ -52,4 +52,4 @@ tags: software
 　　如果执行结果和上面相同，则说明安装成功，pwn模块现在可以使用了。仅以此记录一下，挣扎了一个下午时间来安装的经历。
 
 
-转载请注明：[碎雪的小屋](http://RoyTse.github.io) » ["博赛杯"热身赛Write Up](http://RoyTse.github.io/2017/07/CTF_WriteUp/)  
+转载请注明：[碎雪的小屋](http://RoyTse.github.io) » [关于OS-X安装pwntools的那些坑](http://RoyTse.github.io/2017/07/关于OS_X安装pwntools的那些坑/)  

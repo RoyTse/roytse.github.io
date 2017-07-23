@@ -2,7 +2,7 @@
 layout: post
 title: XMAN选拔赛碎雪's部分Write_Up
 date: 2017-07-23 
-tags: software  
+tags: CTF_WP  
 ---
 
 
@@ -156,6 +156,7 @@ tags: software
 
 共济会密码特点很明显，所以百度一下。百度一下猪圈密码然后对照着就行了。
 
+转载请注明：[碎雪的小屋](http://RoyTse.github.io) » [XMAN选拔赛碎雪's部分Write_Up](http://RoyTse.github.io/2017/07/XMAN选拔赛碎雪's部分Write_Up/)  
 
 
 
