@@ -57,4 +57,4 @@ tags: XSS(未完成)
 	
 `=（`被过滤了，
 
-转载请注明：[碎雪的小屋](http://RoyTse.github.io) » [0x00-X-Man夏令营](http://127.0.0.1:4000/2017/07/prompt(1)-to-win-Write-Up/)  
+转载请注明：[碎雪的小屋](http://RoyTse.github.io) » [0x00-X-Man夏令营](http://RoyTse.github.io/2017/07/prompt(1)-to-win-Write-Up/)  
