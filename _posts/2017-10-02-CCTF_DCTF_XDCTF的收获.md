@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 记一次viscms的SQL挖掘
+title: CCTF_DCTF_XDCTF的收获
 date: 2017-10-02
 tags: CTF
 ---
@@ -90,4 +90,4 @@ POST上去后，服务器返回如下：
 	
 猜测是扫描C段找到172.18.0.3，然后就可以拿到权限或者找到flag。然而服务器日常宕机。扫描不出来。。。卡死在这一步。
 
-转载请注明：[碎雪的小屋](http://RoyTse.github.io) » [记一次viscms的SQL挖掘](http://RoyTse.github.io/2017/10/CCTF_DCTF_XDCTF的收获/)  
+转载请注明：[碎雪的小屋](http://RoyTse.github.io) » [CCTF_DCTF_XDCTF的收获](http://RoyTse.github.io/2017/10/CCTF_DCTF_XDCTF的收获/)  
