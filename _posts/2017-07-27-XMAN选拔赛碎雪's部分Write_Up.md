@@ -2,7 +2,7 @@
 layout: post
 title: XMAN选拔赛碎雪's部分Write_Up
 date: 2017-07-23 
-tags: CTF_WP  
+categories: CTF_WP  
 ---
 
 

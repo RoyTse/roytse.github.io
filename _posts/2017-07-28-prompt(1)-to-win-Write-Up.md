@@ -2,7 +2,7 @@
 layout: post
 title: prompt(1)-to-win-Write-Up
 date: 2017-07-28 
-tags: XSS(未完成)  
+categories: XSS(未完成)  
 ---
 
 

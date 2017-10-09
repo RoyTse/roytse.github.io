@@ -1,64 +1,112 @@
-# Basic
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+date_format: "ordinal"
 title: 碎雪的小屋
-subtitle: 个人博客
-description: 有很多未完成的坑，我会慢慢填的（逃
-# 头像里面的标题
-avatarTitle: Roy
-# 头像里面的描述
-avatarDesc: 信息安全 / 软件工程
-url: "http://roytse.github.io"
+subtitle: "个人划水站点"
+description: "有很多未完成的坑，我会慢慢填的（逃"
+keywords: Roy, 碎雪, 信息安全, 
+favicon: /favicon.ico
+timezone: Asia/Chongqing
+encoding: "utf-8"
+side_bar_repo_limit: 5
 
-# Comment
-layout: post
-comments: true
-# other options
-comment:
-    disqus: Roy
-    duoshuo: Roy
-    # comments: true
-    # other options
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Su1_Xu3
+organization: 碎雪的小屋
+organization_url: https://roytse.github.io/
+github_username: RoyTse
+location: ChongQing, China
+email: 907064516@qq.com
 
-# Social
-social:
-    weibo: 2745126325
-    github: RoyTse
-    twitter: \@_Fare_well_
-    mail: 907064516@qq.com
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
 
-# 百度统计 
-# 使用博客模板请去掉或者更换 id 
-# baidu:
-#     id: 8ba1c6be0953b6f9c2ba38e57f615421  
+  -
+    href: /categories/
+    label: 分类
 
-# Google Analytics
-# 使用博客模板请去掉或者更换 id
-# ga:
-#     id: UA-84134159-3   
-#     host: auto  
+  -
+    href: /wiki/
+    label: 维基
 
-permalink: /:year/:month/:title/
-# Format
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
 highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
 
-textColor: #FF0000
+repository: RoyTse/RoyTse.github.io
 
-# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: clear
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username: Su1_Xu3
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: RoyTse
+    repo: blog-comments
+    oauth:
+        client_id: 7c5c889ae891f04444c2
+        client_secret: adf5918ec01b4f0c4733a8a041d5c4fa8b559d54
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: RoyTse
+    repo: blog-comments
+    clientID: 7c5c889ae891f04444c2
+    clientSecret: adf5918ec01b4f0c4733a8a041d5c4fa8b559d54
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : true
 
-# The blog button should not be removed.
-blog_button:
-    title: 博客主页
-
-# Navigation buttons in the front page.s
-nav:
-    - {title: 所有文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}      
-    - {title: 关于我, description: about, url: '/about'}      
-    
-
-# Pagination
-gems: [jekyll-paginate]
-paginate: 20
-paginate_path: "page/:num/"
-
-
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    analytics_id: UA-80669434-1

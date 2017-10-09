@@ -2,7 +2,7 @@
 layout: post
 title: JarvisOJ-WEB?（QWB）
 date: 2017-08-12
-tags: Jarvis-OJ-Web
+categories: Jarvis-OJ-Web
 ---
 
 ## WEB?(QWB)

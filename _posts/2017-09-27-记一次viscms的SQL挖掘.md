@@ -2,7 +2,7 @@
 layout: post
 title: 记一次viscms的SQL挖掘
 date: 2017-09-27
-tags: SQL
+categories: SQL
 ---
 
 ### 记一次viscms的SQL挖掘

@@ -2,7 +2,7 @@
 layout: post
 title: 使用 wxPython 创建自己的OSX应用
 date: 2017-06-01 
-tags: Python学习  
+categories: Python学习  
 ---
 
 ## 介绍
