@@ -1,10 +1,10 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-# baseurl:
+baseurl:
 date_format: "ordinal"
 title: 碎雪的小屋
-subtitle: "<script>alert("xss")</script>"
+subtitle: "alert(1)"
 description: "有很多未完成的坑，我会慢慢填的（逃"
 keywords: Roy, 碎雪, 信息安全, 
 favicon: /favicon.ico
