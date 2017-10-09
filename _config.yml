@@ -1,7 +1,7 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl:
+# baseurl:
 date_format: "ordinal"
 title: 碎雪的小屋
 subtitle: "<script>alert("xss")</script>"
