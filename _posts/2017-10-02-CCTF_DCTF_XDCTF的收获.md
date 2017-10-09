@@ -2,7 +2,7 @@
 layout: post
 title: CCTF_DCTF_XDCTF的收获
 date: 2017-10-02
-categories: CTF
+categories: Write_Up
 ---
 
 ### CCTF

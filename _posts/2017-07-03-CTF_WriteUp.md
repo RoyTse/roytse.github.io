@@ -2,7 +2,7 @@
 layout: post
 title: 博赛杯热身赛Write Up
 date: 2017-07-03 
-categories: CTF_WP  
+categories: Write_Up  
 ---
 
 

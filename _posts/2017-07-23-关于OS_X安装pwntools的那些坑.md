@@ -2,7 +2,7 @@
 layout: post
 title: 关于OS-X安装pwntools的那些坑
 date: 2017-07-23 
-categories: software  
+categories: Software  
 ---
 
 
